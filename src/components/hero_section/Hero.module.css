@@ -1,0 +1,68 @@
+/* layout of hero page width: 1440px;
+height: 270px;
+top: 74px;
+gap: 0px;
+opacity: 0px;
+background-color: #121212;background: #121212;
+
+*/
+
+/* layout of conten width: 799px;
+height: 212px;
+top: 103px;
+left: 328px;
+gap: 0px;
+opacity: 0px;
+ */
+/* layout of text width: 556px;
+height: 100px;
+top: 171px;
+left: 328px;
+gap: 0px;
+opacity: 0px;
+color: #FFFFFF;
+ */
+/* the text is" 100 Thousand Songs, ad-free"
+and css width: 473px;
+height: 48px;
+top: 171px;
+left: 369px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+and second line"Over thousands podcast episodes"
+width: 556px;
+height: 48px;
+top: 223px;
+left: 328px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+background: #FFFFFF;
+ */
+
+/* for image  */
+
+.hero {
+    background-color: var(--color-black);
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
