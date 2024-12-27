@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import {Link}  from "react-router-dom";
 import Button from "../navbar/button/Button";
 import Logo from "../navbar/logo/Logo";
 import Search from "../navbar/searchbar/SearchBar";
@@ -11,13 +11,10 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Link to="/">
+      {/* <Link to="/"> */}
         <Logo />
-      </Link>
-      <Search
-        placeholder="Search a song of your choice"
-        // searchData={searchData}
-      />
+      {/* </Link> */}
+      <Search/>
       <Button text="Give Feedback" onClick={handleFeedbackClick} />
     </nav>
   );

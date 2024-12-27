@@ -17,7 +17,7 @@
 
 import styles from "./Button.module.css";
 
-function Button({ text = "Button", onClick }) {
+function Button({ text, onClick }) {
   return (
     <button className={styles.button} onClick={onClick}>
       {text}

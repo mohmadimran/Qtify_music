@@ -1,5 +1,12 @@
-import LogoImage from "../../../assets/images/logo.png";
-
+import LogoImage from "../../../assets/logo.png";
+import Style from "./Logo.module.css";
 export default function Logo() {
-  return <img src={LogoImage} alt="logo" width={67} />;
+  return (
+    <div>
+      <img src={LogoImage} alt="logo" className={Style.logo} />
+      <p className={Style.logoText}>
+        Q <span>  tify</span>
+      </p>
+    </div>
+  );
 }

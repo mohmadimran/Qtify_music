@@ -1,7 +1,6 @@
 
 /* for logo */
 .logo{
-    font-family: Font Awesome 6 Pro;
 font-size: 28px;
 font-weight: 900;
 line-height: 24px;
@@ -9,21 +8,10 @@ letter-spacing: 1px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color:#121212;
 
 }
 
-/* for logo text  */
-/* <h1>Q  tify</h1> */
-/* layout of text and logo width: 60px;
-height: 24px;
-top: 30px;
-left: 39px;
-gap: 0px;
-opacity: 0px;
- */
 .logoText{
-    font-family: Avenir Next Condensed;
 font-size: 24px;
 font-weight: 600;
 line-height: 24px;
@@ -31,5 +19,7 @@ letter-spacing: 1px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color:#FFFFFF;
+color:var(--primary-white);
+margin-top: -15px;
+margin-left: 5px;
 }
