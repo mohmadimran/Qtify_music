@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
-import CardContainer from "../card/Card";
+import CardContainer from "./card/Card";
 import Section from "../section/Section";
-import style from "../card/Card.module.css";
+import style from "./card.module.css";
 
 export default function CardData() {
   const [loading, setLoading] = useState(true);
@@ -37,9 +37,9 @@ export default function CardData() {
       {loading ? (
         <h1>Loading..........</h1>
       ) : (
-        <Grid container spacing={0.5}>
+        <Grid container spacing={5}>
           {cardData.map((card) => (
-            <Grid item xs={4} md={2} key={card.id}>
+            <Grid item key={card.id}>
               <CardContainer
                 title={card.title}
                 description={card.description}

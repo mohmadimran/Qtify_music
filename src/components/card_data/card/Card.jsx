@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Style from "./card.module.css";
+import Style from "../card.module.css";
 export default function CardContainer({ title, description, image, follows }) {
   return (
     <Stack>
@@ -30,8 +30,6 @@ export default function CardContainer({ title, description, image, follows }) {
 
 function BasicChips(props) {
   return (
-    <Stack direction="row" spacing={1}>
-      <Chip className={Style.chipdetail} label={`${props.follows} follows`} />{" "}
-    </Stack>
+      <Chip sx={{backgroundColor:"#121212",color:"#FFFFFF"}}  label={`${props.follows} follows`} />
   );
 }

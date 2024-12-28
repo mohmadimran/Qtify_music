@@ -5,7 +5,7 @@ import style from "./Section.module.css";
 
 export default function Section() {
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "98%" }}>
       <Stack direction="row" spacing={2} sx={{ justifyContent: "space-between",alignItems: "center" }}>
         <Typography className={style.leftText} variant="button" gutterBottom sx={{ display: "block"}}>
         Top Albums

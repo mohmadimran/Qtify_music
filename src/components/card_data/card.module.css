@@ -47,16 +47,15 @@ opacity: 0px;
 }
 .chipContainer{
     background-color: var(--primary-white);
+    width: 100%;
 }
-.chipdetail{
-    background-color: var(--color-black);
-    color: var(--primary-white);
-}
+
 .bottomText{
     color: var(--primary-white);
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    /* text-align: center; */
+    text-align: center;
+    width: 100%;
     
 }
