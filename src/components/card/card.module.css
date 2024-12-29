@@ -1,0 +1,19 @@
+.cardBox {
+  height: 205px;
+  gap: 0px;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0px;
+}
+.chipContainer {
+  background-color: var(--primary-white);
+  width: 100%;
+}
+
+.bottomText {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+}

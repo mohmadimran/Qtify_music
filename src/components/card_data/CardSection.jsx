@@ -2,10 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import { Box, CircularProgress } from "@mui/material";
-import Card from "./card/Card";
+import Card from "../card/Card";
 import Section from "../titleSection/TitleSection";
 import SongSection from "../song_section/SongSection";
-import style from "./card.module.css";
+import style from "./style.module.css";
 
 export default function CardData() {
   const [loading, setLoading] = useState(true);

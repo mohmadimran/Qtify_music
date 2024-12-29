@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TitleSection from "../titleSection/TitleSection";
 
-import Card from "../card_data/card/Card";
+import Card from "../card/Card";
 
 const TabPanel = ({ children, value, index }) => {
   return (

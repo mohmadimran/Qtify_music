@@ -4,12 +4,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Style from "../card.module.css";
+import Style from "./card.module.css";
 
 export default function CardContainer({ key,cardData }) {
   return (
     <>
-        <Card className={Style.cardBox} sx={{ maxWidth: 159 }} key={key}>
+       <Stack direction="column" spacing={1} key={key}>
+       <Card className={Style.cardBox} sx={{ maxWidth: 159 }} >
           <CardMedia
             sx={{ height: 140 }}
             image={cardData.image}
@@ -24,10 +25,12 @@ export default function CardContainer({ key,cardData }) {
               ) : null}
             </Stack>
           </CardContent>
-          <Typography className={Style.bottomText} variant="body2">
+          
+        </Card>
+        <Typography className={Style.bottomText} variant="body2">
             {cardData.title}
           </Typography>
-        </Card>
+       </Stack>
     </>
   );
 }
