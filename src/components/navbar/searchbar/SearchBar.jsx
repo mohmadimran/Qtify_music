@@ -7,7 +7,8 @@ function Search() {
     <div style={{ position: "relative" }}>
       <form className={styles.wrapper}>
         <div>
-          <input name="album" className={styles.search} />
+          <input name="album" 
+ placeholder="search"          className={styles.search} />
         </div>
         <div>
           <button className={styles.searchButton} type="submit">

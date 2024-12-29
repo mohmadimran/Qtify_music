@@ -1,5 +1,5 @@
 .leftText {
-  color: var(--primary-white);
+  color: var(--color-white);
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -8,7 +8,7 @@
   text-decoration-skip-ink: none;
 }
 .rightText {
-  color: var(--color-primary);
+  color: var(--color-green);
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;

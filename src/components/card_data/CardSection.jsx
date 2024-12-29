@@ -1,13 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
-import CardContainer from "./card/Card";
-import Section from "../section/Section";
+import { Box, CircularProgress } from "@mui/material";
+import Card from "./card/Card";
+import Section from "../titleSection/TitleSection";
+import SongSection from "../song_section/SongSection";
 import style from "./card.module.css";
 
 export default function CardData() {
   const [loading, setLoading] = useState(true);
-  const [cardData, setCardData] = useState([]);
+  const [isCardData, setCardData] = useState([]);
 
   // Fetch data from API
   async function getCardData() {
@@ -32,24 +34,22 @@ export default function CardData() {
 
   return (
     <Grid container className={style.cardSection} sx={{ padding: "20px" }}>
-      <Section />
+      <Section leftTitle="Top Albums" rightTitle="Collapse" />
 
       {loading ? (
-        <h1>Loading..........</h1>
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 5,width:"100%" }}>
+          <CircularProgress sx={{color:"#34C94B"}}/>
+        </Box>
       ) : (
-        <Grid container spacing={5}>
-          {cardData.map((card) => (
-            <Grid item key={card.id}>
-              <CardContainer
-                title={card.title}
-                description={card.description}
-                image={card.image}
-                follows={card.follows}
-              />
+        <Grid container spacing={4}>
+          {isCardData.map((item) => (
+            <Grid item key={item.id}>
+              <Card cardData={item} />
             </Grid>
           ))}
         </Grid>
       )}
+      <SongSection />
     </Grid>
   );
 }

@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Poppins;
-
+text-decoration: none;
 }
 html,body{
   scroll-behavior: smooth;
@@ -11,8 +11,8 @@ html,body{
 }
 :root{
   --color-black: #121212;
-  --primary-white: #FFFFFF;
-  --color-primary: #34C94B;
+  --color-white: #FFFFFF;
+  --color-green: #34C94B;
 
 }
 /* :root {

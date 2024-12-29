@@ -3,15 +3,16 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import style from "./section.module.css";
 
-export default function Section() {
+export default function Section(props) {
   return (
-    <Box sx={{ width: "98%" }}>
+    <Box sx={{ width: "98%",marginTop: "30px" }}>
       <Stack direction="row" spacing={2} sx={{ justifyContent: "space-between",alignItems: "center" }}>
         <Typography className={style.leftText} variant="button" gutterBottom sx={{ display: "block"}}>
-        Top Albums
+        {props.leftTitle}
+
         </Typography>
         <Typography className={style.rightText} variant="button" gutterBottom sx={{ display: "block" }}>
-        Collapse
+        {props.rightTitle}
         </Typography>
       </Stack>
     </Box>

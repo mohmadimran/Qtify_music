@@ -2,7 +2,7 @@
   
   .button {
     background-color: var(--color-black);
-    color: var(--color-primary);
+    color: var(--color-green);
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 8px; /* Adjust as per design */

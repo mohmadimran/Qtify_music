@@ -11,7 +11,7 @@
   max-width: 1440px;
 }
 .hero h1 {
-  color: var(--primary-white);
+  color: var(--color-white);
   font-size: 32px;
   font-weight: 600;
   line-height: 48px;

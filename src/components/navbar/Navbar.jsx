@@ -1,5 +1,5 @@
-// import {Link}  from "react-router-dom";
-import Button from "../navbar/button/Button";
+import {Link}  from "react-router-dom";
+import Button from "../button/Button";
 import Logo from "../navbar/logo/Logo";
 import Search from "../navbar/searchbar/SearchBar";
 import styles from "./Navbar.module.css";
@@ -11,9 +11,9 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      {/* <Link to="/"> */}
+      <Link to="/">
         <Logo />
-      {/* </Link> */}
+      </Link>
       <Search/>
       <Button text="Give Feedback" onClick={handleFeedbackClick} />
     </nav>
