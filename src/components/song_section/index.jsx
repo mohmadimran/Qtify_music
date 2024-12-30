@@ -4,9 +4,8 @@ import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import TitleSection from "../titleSection/TitleSection";
 
-import Card from "../card/Card";
+import Card from "../card";
 
 const TabPanel = ({ children, value, index }) => {
   return (
@@ -69,6 +68,7 @@ const SongComponent = () => {
     centerPadding: "60px",
     slidesToShow: 7,
     swipeToSlide: true,
+    speed: 1000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -126,7 +126,6 @@ const SongComponent = () => {
 
   return (
     <Box sx={{ width: "100%", backgroundColor: "#121212" }}>
-      <TitleSection leftTitle="Songs" rightTitle="" />
       {loading ? (
         <Box sx={{ display: "flex", justifyContent: "center", mt: 5 }}>
           <CircularProgress sx={{ color: "#34C94B" }} />

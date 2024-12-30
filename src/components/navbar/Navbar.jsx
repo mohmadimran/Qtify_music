@@ -1,5 +1,5 @@
 import {Link}  from "react-router-dom";
-import Button from "../button/Button";
+import Button from "../button";
 import Logo from "../navbar/logo/Logo";
 import Search from "../navbar/searchbar/SearchBar";
 import styles from "./Navbar.module.css";
