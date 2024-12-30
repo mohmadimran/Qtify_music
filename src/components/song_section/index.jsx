@@ -125,7 +125,7 @@ const SongComponent = () => {
   };
 
   return (
-    <Box sx={{ width: "100%", backgroundColor: "#121212" }}>
+    <Box>
       {loading ? (
         <Box sx={{ display: "flex", justifyContent: "center", mt: 5 }}>
           <CircularProgress sx={{ color: "#34C94B" }} />

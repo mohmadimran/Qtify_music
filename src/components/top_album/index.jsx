@@ -12,6 +12,7 @@ export default function TopAlbum() {
   const [loading, setLoading] = useState(true);
   const [isCardData, setCardData] = useState([]);
 
+
 //  carousal settings and button
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -23,7 +24,7 @@ function SampleNextArrow(props) {
         display: "block",
         background: "#34C94B",
         color: "#FFFFFF",
-        right: "-10px",
+        right: "-1px",
         zIndex: 2,
         borderRadius: "50%",
       }}
@@ -95,7 +96,7 @@ const settings = {
         <Box>
            <Slider {...settings}>
                 {isCardData.map((song) => (
-                  <Card key={song.id} cardData={song} />
+                  <Card key={song.id} cardData={song}/>
                 ))}
               </Slider>
         </Box>

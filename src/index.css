@@ -1,18 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Poppins;
-text-decoration: none;
+  text-decoration: none;
 }
-html,body{
+html,
+body {
   scroll-behavior: smooth;
   width: 100%;
   background-color: var(--color-black);
 }
-:root{
+:root {
   --color-black: #121212;
-  --color-white: #FFFFFF;
-  --color-green: #34C94B;
-
+  --color-white: #ffffff;
+  --color-green: #34c94b;
 }

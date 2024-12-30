@@ -22,7 +22,7 @@ export default function NewAlbum() {
           display: "block",
           background: "#34C94B",
           color: "#FFFFFF",
-          right: "-10px",
+          right: "-1px",
           zIndex: 2,
           borderRadius: "50%",
         }}
