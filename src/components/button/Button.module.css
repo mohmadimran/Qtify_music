@@ -14,7 +14,7 @@
   
   .button:hover {
     cursor: pointer;
-    background-color: var(--primary-white);
+    background-color: var(--color-white);
     color: var(--color-black);
   }
   
