@@ -5,11 +5,13 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Style from "./card.module.css";
+import {Link} from "react-router-dom"
 
 export default function CardContainer({ key,cardData }) {
   return (
     <>
        <Stack direction="column" spacing={1} key={key}>
+       <Link to={`/album/${cardData.slug}`}>
        <Card className={Style.cardBox} sx={{ maxWidth: 159 }} >
           <CardMedia
             sx={{ height: 140 }}
@@ -30,6 +32,7 @@ export default function CardContainer({ key,cardData }) {
         <Typography className={Style.bottomText} variant="body2">
             {cardData.title}
           </Typography>
+       </Link>
        </Stack>
     </>
   );

@@ -79,7 +79,7 @@ const SongComponent = () => {
         "https://qtify-backend-labs.crio.do/songs"
       );
       const apiData = response.data;
-      console.log("All song data: ", apiData);
+      console.log("song data: ", apiData);
       setSongs(apiData);
       setFilteredSongs(response.data); // Default to all songs
     } catch (error) {
@@ -97,7 +97,6 @@ const SongComponent = () => {
         "https://qtify-backend-labs.crio.do/genres"
       );
       const genreData = response.data.data;
-      console.log("All song data: ", genreData);
       setGenres([{ key: "all", label: "All" }, ...genreData]);
     } catch (error) {
       console.error("Error fetching data: ", error);

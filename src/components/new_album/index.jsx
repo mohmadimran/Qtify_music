@@ -67,7 +67,7 @@ export default function NewAlbum() {
         "https://qtify-backend-labs.crio.do/albums/new"
       );
       const apiData = response.data;
-      console.log("All card data: ", apiData);
+      console.log("new album data: ", apiData);
       setCardData(apiData);
     } catch (error) {
       console.error("Error fetching data: ", error);

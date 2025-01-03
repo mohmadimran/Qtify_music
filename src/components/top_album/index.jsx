@@ -71,7 +71,7 @@ const settings = {
         "https://qtify-backend-labs.crio.do/albums/top"
       );
       const apiData = response.data;
-      console.log("All card data: ", apiData);
+      console.log("top album data: ", apiData);
       setCardData(apiData);
     } catch (error) {
       console.error("Error fetching data: ", error);
